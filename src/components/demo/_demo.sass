@@ -1,0 +1,52 @@
+.demo
+    position: relative
+    min-height: 100vh
+    background-color: rgba(255, 255, 255, .6)
+    &::before
+        position: absolute
+        content: ''
+        background: url(img/mainbg.jpg) center center/cover no-repeat
+        background-attachment: fixed
+        width: 100%
+        height: 100%
+        z-index: -1
+    &__title
+        padding-top: 12rem
+        text-align: left
+    &__text
+        padding-top: 1rem
+        font-size: 2rem
+        opacity: .6
+    &__video
+        padding: 6rem 0 16rem
+        width: 82rem
+        height: 68rem
+        margin: 0 auto
+        iframe
+            width: 100%
+            height: 100%
+@media ( max-width: 992px )
+    .demo
+        &__video
+            width: 68rem
+            height: 58rem
+@media ( max-width: 768px )
+    .demo
+        &__title
+            padding-top: 6rem
+        &__video
+            width: 50rem
+            height: 40rem
+            padding: 6rem 0
+@media ( max-width: 576px )
+    .demo
+        min-height: 55rem
+        &__title
+            text-align: center
+        &__text
+            font-size: 1.4rem
+            text-align: center
+        &__video
+            width: 30rem
+            height: 25rem
+            padding: 4rem 0

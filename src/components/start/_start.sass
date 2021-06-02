@@ -1,0 +1,74 @@
+.start
+    position: relative
+    min-height: 100vh
+    background-color: rgba(0, 0, 0, .5)
+    &::before
+        position: absolute
+        content: ''
+        background: url(img/mainbg.jpg) center center/cover no-repeat
+        background-attachment: fixed
+        width: 100%
+        height: 100%
+        z-index: -1
+    &__title
+        width: 70rem
+        margin: 2rem auto 0
+        color: #ffffff
+        font-size: 5.5rem
+        font-weight: 300
+        line-height: 6rem
+        text-align: center
+    &__subtitle
+        margin-top: 2rem
+        color: #ffffff
+        font-size: 2rem
+        text-align: center
+    &__form
+        width: 80rem
+        height: 28rem
+        margin: 10rem auto 0
+        background-color: rgba(0, 0, 0, .5)
+    &__form-text
+        color: #ffffff
+        text-align: center
+        font-size: 2rem
+        line-height: 2.5rem
+        width: 41rem
+        margin: 0 auto
+        padding-top: 2rem
+    &__form-title
+        font-size: 2.8rem
+        font-weight: 300
+        color: #fff100
+        text-align: center
+        padding-top: 3rem
+@media ( max-width: 992px )
+    .start
+        &__form
+            width: 70rem
+@media ( max-width: 768px )
+    .start
+        &__title
+            width: 50rem
+            font-size: 4rem
+            line-height: 5rem
+        &__form
+            width: 50rem
+@media ( max-width: 576px )
+    .start
+        &__title
+            width: 30rem
+            font-size: 2.4rem
+            line-height: 3.5rem
+            margin-top: 6rem
+        &__subtitle
+            font-size: 1.3rem
+        &__form
+            width: 30rem
+            height: 32rem
+            margin-top: 5rem
+        &__form-text
+            width: 30rem
+            font-size: 1.4rem
+        &__form-title
+            font-size: 1.8rem

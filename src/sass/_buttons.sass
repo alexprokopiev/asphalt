@@ -1,0 +1,45 @@
+.button
+    display: block
+    background-color: #ffd940
+    font-size: 1.4rem
+    font-weight: 400
+    border: none
+    outline: none
+    cursor: pointer
+    &_start
+        width: 18.5rem
+        height: 4.5rem
+    &_goods, &_use
+        width: 22rem
+        height: 4rem
+        border-radius: 3rem
+    &_help
+        width: 18.5rem
+        height: 4.5rem
+    &_modal-call
+        width: 32rem
+        height: 6rem
+        border-radius: 3rem
+        margin: 3rem auto 1.5rem
+@media ( max-width: 1200px )
+    .button
+        &_use
+            width: 18rem
+@media ( max-width: 992px )
+    .button
+        &_goods
+            width: 17rem
+@media ( max-width: 768px )
+    .button
+        &_goods
+            width: 22rem
+@media ( max-width: 576px )
+    .button
+        &_start
+            margin: 1.5rem auto
+            width: 26rem
+        &_use
+            width: 26rem
+        &_help
+            margin: 1.5rem auto
+            width: 26rem

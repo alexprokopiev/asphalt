@@ -1,0 +1,17 @@
+.overlay#modal-call
+    .modal.modal_call
+        .modal__close#modal-call-close &times; 
+        h2.modal__title Оставьте ваш телефон
+        .modal__text Ваш звонок очень важен для нас
+        .modal__form-call
+            form(action="sendmail.php", method="post").form.form_modal-call
+                input(type="text" name="name" placeholder="Имя").input.input_modal-call
+                input(type="text" name="phone" placeholder="Телефон").input.input_modal-call
+                <input type="hidden" name="city" value="Омск">
+                <input type="hidden" name="type" value="асфальт">
+                <input type="hidden" name="leadtype" value="Заявка на обратный звонок">
+                button(type="submit").button.button_modal-call Отправить
+                .modal__privace
+                    input(type="checkbox", name="privace" checked).input_privace
+                    .modal__privace-text Даю своё согласие на законную обработку персональных данных.
+                    a(href="#").modal__privace-link.show-confidence Правила обработки 

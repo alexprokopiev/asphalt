@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Холодный асфальт
+        link(rel="shortcut icon", href="img/favicon.png", type="image/x-icon")
+    body        
+        main.main
+            include ./components/start/_start.pug      
+            include ./components/goods/_goods.pug
+            include ./components/about/_about.pug
+            include ./components/use/_use.pug
+            include ./components/demo/_demo.pug
+            include ./components/feedbacks/_feedbacks.pug
+            include ./components/help/_help.pug          
+        include ./components/footer/_footer.pug            
+        include ./components/modals/_modal-call.pug
+        include ./components/modals/_modal-thanks.pug
+        include ./components/modals/_modal-confidence.pug

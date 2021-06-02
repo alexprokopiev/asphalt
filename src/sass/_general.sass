@@ -1,0 +1,36 @@
+@import '../fonts/_fonts'
+
+html
+    font-family: 'Segoe', sans-serif
+    font-size: 10px
+    font-weight: 400
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+.container
+    width: 114rem
+    margin: 0 auto
+h2
+    font-size: 4.9rem
+    font-weight: 300
+    text-align: center
+
+@media ( max-width: 1200px)
+    .container
+        width: 90rem
+@media ( max-width: 992px)
+    .container
+        width: 70rem
+    h2
+        font-size: 4rem
+@media ( max-width: 768px)
+    .container
+        width: 50rem
+    h2
+        font-size: 3.2rem
+@media ( max-width: 576px)
+    .container
+        width: 30rem
+        h2
+            font-size: 2.2rem

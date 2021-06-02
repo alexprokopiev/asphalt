@@ -1,0 +1,84 @@
+.about
+    position: relative
+    min-height: 85rem
+    overflow: hidden
+    &::before
+        position: absolute
+        content: ''
+        background-color: #f5f5f5
+        width: 110%
+        height: 35rem
+        top: 40rem
+        transform: rotate(-4.5deg)
+        margin-left: -2rem
+        z-index: -1
+    &__item
+        display: flex
+        justify-content: space-between
+        margin: 2rem 0 13rem
+        min-height: 29rem
+    &__item-wrap
+        width: 60rem
+    &__item-title
+        font-size: 4.7rem
+        line-height: 5.5rem
+        text-align: left
+        margin: 2rem 0 1rem
+    &__item-punkt
+        font-size: 1.6rem
+        margin-left: 2rem
+    &__item-img
+        width: 50rem
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+            width: 27rem
+            height: 27rem
+    &__item-text
+        font-size: 1.6rem
+@media ( max-width: 992px )
+    .about
+        &__item
+            margin-bottom: 5rem
+        &__item-title
+            font-size: 4rem
+@media ( max-width: 768px )
+    .about
+        &__item-wrap
+            width: 25rem
+        &__item
+            margin: 4rem 0
+        &__item-title
+            font-size: 3rem
+            line-height: 3.8rem
+        &__item-punkt
+            font-size: 1.4rem
+        &__item-text
+            font-size: 1.4rem
+        &__item-img
+            width: 25rem
+            img
+                width: 20rem
+                height: 20rem
+@media ( max-width: 576px )
+    .about
+        min-height: 95rem
+        &::before
+            top: 46rem
+            height: 44rem
+        &__item
+            flex-direction: column
+            &:first-child
+                flex-direction: column-reverse
+        &__item-img
+            width: 30rem
+            img
+                width: 15rem
+                height: 15rem
+        &__item-wrap
+            width: 30rem
+        &__item-title
+            text-align: center
+            font-size: 2.4rem
+            line-height: 3rem

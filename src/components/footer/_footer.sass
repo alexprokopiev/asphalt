@@ -1,0 +1,87 @@
+.footer
+    min-height: 12rem
+    background-color: #ffffff
+    &__main-wrap
+        display: flex
+        height: 12rem
+        align-items: center
+        justify-content: space-between
+    &__logo
+        width: 27rem
+        height: 4rem
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 1.4rem
+        background-color: rgba(0,0,0,.15)
+        border-radius: .5rem
+    &__address
+        width: 31rem
+        font-size: 1.6rem
+    &__phone-wrap
+        display: flex
+        justify-content: space-between
+        width: 31rem
+    &__phone-subwrap
+        position: relative
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        width: 75%
+    &__phone
+        position: relative
+        display: block
+        text-decoration: none
+        font-size: 2.3rem
+        color: #000000
+        &::before
+            position: absolute
+            content: url(img/arrow.png)
+            width: 1.8rem
+            height: 1.8rem
+            top: .8rem
+            left: -3rem
+            display: flex
+            justify-content: center
+            align-items: flex-end
+            border-radius: .2rem
+            background-color: rgba(0,0,0,.15)
+    &__email
+        display: block
+        width: fit-content
+        font-size: 1.3rem
+        color: #000000
+        text-decoration: none
+        border-bottom: .1rem solid #000000
+    &__icon
+        width: 4.4rem
+        height: 4.4rem
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: #ffd100
+        border-radius: 100%
+        border: none
+        outline: none
+        cursor: pointer
+@media ( max-width: 1200px )
+    .footer
+        &__address
+            width: 26rem
+@media ( max-width: 992px )
+    .footer
+        &__address
+            display: none
+@media ( max-width: 768px )
+    .footer
+        &__phone
+            font-size: 2rem
+@media ( max-width: 576px )
+    .footer
+        &__main-wrap
+            flex-direction: column
+        &__logo
+            margin-top: 1rem
+        &__phone-wrap
+            width: 26rem
+            margin-bottom: 1rem
